@@ -12,10 +12,10 @@ import java.util.Set;
 @Service
 public class RoomService {
 
-    @Value("${TWILIO_ACCOUNT_SID}")
+    @Value("${twilio.account-sid}")
     private String accountSid;
 
-    @Value("${TWILIO_AUTH_TOKEN}")
+    @Value("${twilio.auth-token}")
     private String authToken;
 
 

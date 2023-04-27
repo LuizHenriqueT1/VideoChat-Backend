@@ -1,13 +1,13 @@
 package videochat.com.br.videochat.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.List;
+
 import java.util.UUID;
 
 @Data
@@ -36,6 +36,7 @@ public class User implements Serializable {
     private String password;
 
     @Column(name = "created_at", nullable = false)
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDateTime createdAt;
 
 

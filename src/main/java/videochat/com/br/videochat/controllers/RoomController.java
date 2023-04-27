@@ -1,18 +1,16 @@
 package videochat.com.br.videochat.controllers;
 
-import com.twilio.base.ResourceSet;
-import com.twilio.http.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import videochat.com.br.videochat.services.RoomService;
-import com.twilio.rest.video.v1.Room;
 
 import java.util.Set;
 
 @RestController
 @RequestMapping(value = "/v1/Rooms")
+
 public class RoomController {
 
     @Autowired
